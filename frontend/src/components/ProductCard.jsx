@@ -16,7 +16,7 @@
 
     return (
       <article className="product-card">
-          <img src={`website_images/PROD_${p.imagefile}`} alt={p.title} />
+          <img src={p.imageURL} alt={p.productname} />
           <a href="#">{p.category}</a>
           <h3>{p.title}</h3>
           <p>Kr. {p.price},-</p>
