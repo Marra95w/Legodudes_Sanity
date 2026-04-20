@@ -16,7 +16,7 @@
 
     return (
       <article className="product-card">
-          <img src={p.imageURL} alt={p.productname} />
+          <img src={p.imageURL ? p.imageURL : "https://placehold.co/600x800?text=Hello+World"} alt={p.productname} />
           <a href="#">{p.category}</a>
           <h3>{p.title}</h3>
           <p>Kr. {p.price},-</p>
